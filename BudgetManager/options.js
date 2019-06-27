@@ -16,7 +16,7 @@ $(function () {
     });
 
     $('#resetTotal').click(function () {
-        chrome.storage.sync.set({'TotalSpent': null},function() {
+        chrome.storage.sync.set({'TotalSpent': "0"},function() {
             var notifOptions = {
                 type: `basic`,
                 iconUrl: 'icon48.png',
