@@ -13,18 +13,27 @@
         "default_popup": "popup.html",
         "default_title": "PageFontStyle"
     },
-    "background":{
-        "scripts":["eventPage.js"],
+    "background": {
+        "scripts": [
+            "eventPage.js"
+        ],
         "persistent": false
     },
-    "content_scripts":[
+    "content_scripts": [
         {
-            "matches":["https://developer.chrome.com/*"],
-            "js":["content.js","jquery-3.4.1.min.js"],
-            "css":["content.css"]
+            "matches": [
+                "https://developer.chrome.com/*"
+            ],
+            "js": [
+                "content.js",
+                "jquery-3.4.1.min.js"
+            ],
+            "css": [
+                "content.css"
+            ]
         }
     ],
-    "permissions":[
+    "permissions": [
         "tabs",
         "https://developer.chrome.com/*"
     ]
