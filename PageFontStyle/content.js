@@ -6,9 +6,9 @@ chrome.runtime.sendMessage({
 
 // Listen to the particular message, check if it's the request to change color
 // Then, change the color of class="api"
-chrome.runtime.onMessage.addListener(function(request,sender,sendResponse){
-    if(request.todo === "changeColor"){
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+    if (request.todo === "changeColor") {
         var addColor = '#' + request.clickedColor;
-        $('.api').css('color',addColor);
+        $('.api').css('color', addColor);
     }
 });
