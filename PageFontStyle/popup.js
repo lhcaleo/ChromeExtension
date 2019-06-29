@@ -15,6 +15,6 @@ $(function () {
                 todo: "changeColor",
                 clickedColor: color
             })
-        })
-    })
-})
+        });
+    });
+});
